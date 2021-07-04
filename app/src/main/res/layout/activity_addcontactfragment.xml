@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".AddContactFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_perm_identity_24"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/addcontact_image"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:hint="Contact Name"
+            android:inputType="textVisiblePassword"
+            android:textSize="20dp"
+            android:id="@+id/add_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:layout_marginRight="35dp"
+            android:id="@+id/addphone_picture"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+961"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+
+            android:id="@+id/textview_961"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:id="@+id/add_phonenumber"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:background="@color/red"
+        android:id="@+id/add_newcontact"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Add Contact"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make sure to add the correct number. Entering wrong credentials will put you in danger in cases of emergency"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

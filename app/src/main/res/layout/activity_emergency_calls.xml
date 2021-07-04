@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyCalls"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#feafa2"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight" />
+    <TextView
+        android:textColor="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Numbers"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp">
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Internal Security Forces"
+
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_isf"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Red Cross"
+                android:id="@+id/contact_name_textview"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_redcross"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Fire Brigade"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_firebrigade"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Himaya"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_Himaya"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Covid 19 hotline"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_covid"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Kafa"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_kafa"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="">
+
+            <TextView
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Embrace (Suicide prevention)"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/call_embrace"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

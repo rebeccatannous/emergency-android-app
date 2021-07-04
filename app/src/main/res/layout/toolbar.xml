@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#feafa2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <ImageView
+           android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:id="@+id/arrow_icon"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/arrow_icon"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Safety App"/>
+
+        <ImageView
+            android:onClick="onClickContacts"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/contact_icon"
+            android:src="@drawable/ic_baseline_perm_contact_calendar_24" />
+    </RelativeLayout>
+</RelativeLayout>

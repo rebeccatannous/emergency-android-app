@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ContactDetailFragment"
+    android:layout_marginTop="50dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_perm_identity_24"
+            android:id="@+id/contact_image"/>
+        <TextView
+            android:layout_toEndOf="@id/contact_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=" Rebecca Tannous"
+            android:id="@+id/contact_name_textview"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Contact Name"
+            android:layout_toEndOf="@id/contact_image"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:id="@+id/contactname_edittext"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:id="@+id/phone_picture"
+            />
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/phone_picture"
+            tools:text="76 461083"
+            android:id="@+id/contact_number_textview"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+961"
+            android:textSize="16dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:id="@+id/textview_961"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:visibility="gone"
+            android:inputType="number"
+            android:layout_toEndOf="@id/phone_picture"
+            android:layout_marginStart="10dp"
+            android:id="@+id/phonenumber_edittext"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="50dp">
+
+
+        <Button
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/save_changes"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            android:text="Save" />
+
+        <Button
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:id="@+id/update_button"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/red"
+
+            android:text="Edit" />
+
+        <Button
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/delete_button"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/red"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_margin="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@drawable/edittext_"
+        android:id="@+id/contactmessage_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your message" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_options_layout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_checkbox"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_below="@id/location_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="location"
+                />
+        </RelativeLayout>
+        <Button
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:id="@+id/sms_button"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/red"
+            android:drawableStart="@drawable/ic_baseline_message_24"
+
+            />
+        <Button
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:id="@+id/whatsapp_button"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/red"
+            android:drawableStart="@drawable/whatsapp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

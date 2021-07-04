@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Safety App</string>
+    <string-array name="spinner_timer">
+        <item>1</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+</resources>
